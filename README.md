@@ -6,7 +6,9 @@ The purpose of this project was to demonstrate performance of the ETL process, d
 - Types of data wrangling performed (data cleaning, joining, filtering, aggregating)
 - Schemata used in the final production database
 
-The general topic selected was one regarding YouTube videos, specifically to study data on the YouTube trending video page to see what is currently most popular and consider how that would inform advertising decisions for target audiences.
+And more particularly, the purpose of this project was to perform the ETL in a compressed time period: one week. It was a simulated exercise for a team to divide a large amount of data among team members and migrate the data into a production database.
+
+The general topic selected was one regarding YouTube videos, specifically to study data on YouTube video trends with an eye toward how the popularity of specific YouTube videos might inform decisions regarding advertising to target audiences.
 
 Team Members: David Bartlett, Levar McKnight, Toby Wong, Jerry Youngblood
 
