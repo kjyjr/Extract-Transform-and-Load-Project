@@ -98,8 +98,37 @@ Ay, Y. E. (2020). Most Popular Youtube Ads. From kaggle.com: <https://www.kaggle
 
 This dataset was formatted as a JSON file containing several elements about YouTube video ads and movie trailers for the years 2017-2020. The file was structured as a list of 57 dictionaries, each with three key-value pairs followed by a fourth that was paired with a list of nested dictionaries. The file was read into a Jupyter notebook, and from there the file data was extracted. Data for the year 2020 was in focus for this project, considering that year being one when people were in their homes for longer periods of time and accordingly when viewership of videos and movies increased.
 
+![alt text](image-23.png)
+![alt text](image-24.png)
+
 Transform:
 With the ads dataset read into a Jupyter notebook, an initial dataframe was assembled to view more of the data, and from that was observed four subsets of data specific to the year 2020. Of those four, one was for the second quarter only of 2020 and was therefore excluded. For each of the three remaining subsets, the data wrangling ensued through cleaning, filtering, and dis-aggregating. For each subset of data, a dataframe was assembled by normalizing the JSON data, then refining the dataframe to reduce it to its most salient elements. The final dataframe in each sub-set allowed for observations to be made across three areas for 2020. First was a top 10 ranking of YouTube ads overall. Second was a top 10 ranking of public service announcement ads (PSAs). And third was a ranking of the top 9 movie trailers contemporaneous with the Oscars. Following the final dataframe for each sub-set, observations were made in a markdown cell about the top ads and movie trailers according to their respective rankings, brands and titles, and the creative and media agencies involved in ad/trailer creation and distribution.
 
+![alt text](image-25.png)
+![alt text](image-26.png)
+![alt text](image-27.png)
+![alt text](image-28.png)
+![alt text](image-29.png)
+![alt text](image-30.png)
+
+![alt text](image-31.png)
+![alt text](image-32.png)
+![alt text](image-33.png)
+![alt text](image-34.png)
+![alt text](image-35.png)
+![alt text](image-36.png)
+
+![alt text](image-37.png)
+![alt text](image-38.png)
+![alt text](image-39.png)
+![alt text](image-40.png)
+![alt text](image-41.png)
+![alt text](image-42.png)
+![alt text](image-43.png)
+
 Load:
 Each subset of transformed data for the top rankings of ads, PSAs, and movie trailers was subsequently loaded into a non-relational database. After observations were drawn from each data subset, its final dataframe was converted to a dictionary and loaded to a corresponding collection in MongoDB Compass. Confirmation of the load was demonstrated via the find operator, and a pprint of the contents accordingly produced. The name of the database is 'youtube_videos,' and the names of its collections are: 'psa_top10_2020,' 'top10_ads_2020,' and 'top_trailers_2020.'
+
+![alt text](image-44.png)
+![alt text](image-45.png)
+![alt text](image-46.png)
