@@ -74,11 +74,21 @@ Extract:
 <https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset>
 The Datasets are in JSON and CSV file formats where the CSV file contains comments, likes, and views that are tied to specific keywords and the JSON contains category IDs that correspond with the keywords.
 
+![alt text](image-16.png)
+
 Transform:
 Looking at how the data can translate into understanding what videos are popular and how the views and likes can show the trends on youtube. Taking the data and dropping extra information such as the VideoID, and Unnamed column headers to make it easier to understand.
 
+![alt text](image-17.png)
+![alt text](image-18.png)
+![alt text](image-19.png)
+![alt text](image-20.png)
+![alt text](image-21.png)
+
 Load:
 Since we are using MongoDB, I created a connection to mongoDB and referenced the database before querying using pymongo.
+
+![alt text](image-22.png)
 
 ## ETL by Jerry Youngblood
 
