@@ -26,10 +26,24 @@ The .csv file contains data relating to trending YouTube videos such as: like/di
 Transform:
 For the transforming, the .csv was pulled into a jupyter notebook and converted to a DataFrame using Pandas.  From there, unnecessary columns were dropped and the publish_time column was changed to a datetime format.
 
-As stated previously, the category_id column only contained numbers that acted as a key for corresponding category titles located in a separate .json file.  To change these numbers to the titles, the json file was brought into the notebook and put into a list.  Using a for loop, the tuples of the id number and matching category title were pulled into a new list, then into a dictionary with the id numbers as the keys.  The category_id column type was changed from integer to string since the numbers are being replaced by the title strings.  Then a loop was used with the .loc function to loop through the DataFrame and replace the numbers with the titles.  The finished DataFrame was then put into a final dictionary for loading to MongoDB.
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+As stated previously, the category_id column only contained numbers that acted as a key for corresponding category titles located in a separate .json file.  To change these numbers to the titles, the json file was brought into the notebook and put into a list.  Using a for loop, the tuples of the id number and matching category title were pulled into a new list, then into a dictionary with the id numbers as the keys.  The category_id column type was changed from integer to string since the numbers are being replaced by the title strings.  Then a loop was used with the loc function to loop through the DataFrame and replace the numbers with the titles.  The finished DataFrame was then put into a final dictionary for loading to MongoDB.
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
 
 Load:
 To load the data, a connection was established to the Mongo Client, a reference to the database named youtubeTrending and collection named youtube was made, and the final dictionary was inserted into the collection.  Finally, a query was done with .find() to see the entries, which showed the load to the database was successful.
+
+![alt text](image-9.png)
+![alt text](image-10.png)
 
 ## ETL by Levar McKnight
 
