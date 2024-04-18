@@ -57,8 +57,15 @@ The dataset that was gathered from Kaggle.com was last updated three years ago. 
 Transform:
 Per our proposal, I decided to use views as a factor to determine how to place our advertisements.  To simplify this process, I dropped columns that I felt were irrelevant to view counts.  For example, columns that involved comments were excluded because not all viewers leave comments.  Columns such as view counts and video categories were left in order to make it easier to determine what type of videos attracted the most viewers.
 
+![alt text](image-11.png)
+![alt text](image-12.png)
+![alt text](image-13.png)
+![alt text](image-14.png)
+
 Load:
 After the dataset was cleaned, it was loaded into MongoDB.  Due to the size of the dataset, a query was not done in Jupyter.  Instead, successful loading was confirmed by checking the collection in MongoDB.  The cleaned up database can be later analyzed to determine where to place our advertisements for maximum viewership.
+
+![alt text](image-15.png)
 
 ## ETL by Toby Wong
 
